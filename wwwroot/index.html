@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#home">Book Store</a>
+        <form id="search-form" class="search"><input id="search" placeholder="Search by title or author"><button>Search</button></form>
+        <nav>
+            <a href="#books">Books</a><a href="#cart">Cart <b id="cart-count">0</b></a><a href="#wishlist">Wishlist <b id="wishlist-count">0</b></a>
+            <a id="account-link" href="#login">Log in</a>
+        </nav>
+    </header>
+    <main id="app" class="container"><p>Loading…</p></main>
+    <template id="book-card-template">
+        <article class="book-card"><img><div class="card-body"><p class="eyebrow"></p><h3></h3><p class="author"></p><p class="rating"></p><p class="price"></p><div class="actions"><button class="cart-button">Add to cart</button><button class="wish-button" title="Toggle wishlist">♡</button></div></div></article>
+    </template>
+    <script src="/js/app.js" defer></script>
+</body>
+</html>
